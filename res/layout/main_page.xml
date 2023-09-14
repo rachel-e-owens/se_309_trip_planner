@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trip_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/tripImage2"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tripText1"
+        app:layout_constraintStart_toStartOf="@+id/tripText1"
+        app:layout_constraintTop_toBottomOf="@+id/tripText1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tripText2"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:text="Post Text from your friend"
+        app:layout_constraintEnd_toEndOf="@+id/tripImage2"
+        app:layout_constraintStart_toStartOf="@+id/tripImage2"
+        app:layout_constraintTop_toBottomOf="@+id/tripImage2" />
+
+    <ImageView
+        android:id="@+id/tripImage1"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/openFreindList"
+        app:layout_constraintStart_toStartOf="@+id/openFreindList"
+        app:layout_constraintTop_toBottomOf="@+id/openFreindList"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tripText1"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:text="Post Text from your friend"
+        app:layout_constraintEnd_toEndOf="@+id/tripImage1"
+        app:layout_constraintStart_toStartOf="@+id/tripImage1"
+        app:layout_constraintTop_toBottomOf="@+id/tripImage1" />
+
+    <TextView
+        android:id="@+id/previewTrip1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Trip Name"
+        app:layout_constraintBottom_toBottomOf="@+id/veiwTrip1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/veiwTrip1"
+        app:layout_constraintTop_toTopOf="@+id/veiwTrip1"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/previewTrip2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Trip Name"
+        app:layout_constraintBottom_toBottomOf="@+id/veiwTrip2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/veiwTrip2"
+        app:layout_constraintTop_toTopOf="@+id/veiwTrip2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/veiwTrip2"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Veiw"
+        app:layout_constraintEnd_toStartOf="@+id/previewTrip2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veiwTrip1" />
+
+    <Button
+        android:id="@+id/veiwTrip1"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Veiw"
+        app:layout_constraintEnd_toStartOf="@+id/previewTrip1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VeiwPastTripHeader" />
+
+    <TextView
+        android:id="@+id/previewTrip3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Trip Name"
+        app:layout_constraintBottom_toBottomOf="@+id/veiwTrip3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/veiwTrip3"
+        app:layout_constraintTop_toTopOf="@+id/veiwTrip3"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/veiwTrip3"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Veiw"
+        app:layout_constraintEnd_toStartOf="@+id/previewTrip3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veiwTrip2" />
+
+    <TextView
+        android:id="@+id/previewTrip4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Trip Name"
+        app:layout_constraintBottom_toBottomOf="@+id/veiwTrip4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/veiwTrip4"
+        app:layout_constraintTop_toTopOf="@+id/veiwTrip4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/veiwTrip4"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Veiw"
+        app:layout_constraintEnd_toStartOf="@+id/previewTrip4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veiwTrip3" />
+
+    <Button
+        android:id="@+id/VeiwPastTripHeader"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="veiwPastTrips"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createNewTripButton" />
+
+    <Button
+        android:id="@+id/createNewTripButton"
+        android:layout_width="385dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Stat Planning your next trip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripText3" />
+
+    <TextView
+        android:id="@+id/WelcomeBanner"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="All of your cool stats"
+        app:layout_constraintEnd_toStartOf="@+id/editProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeBanner" />
+
+    <ImageView
+        android:id="@+id/tripImage3"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tripText2"
+        app:layout_constraintStart_toStartOf="@+id/tripText2"
+        app:layout_constraintTop_toBottomOf="@+id/tripText2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tripText3"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:text="Post Text from your friend"
+        app:layout_constraintEnd_toEndOf="@+id/tripImage3"
+        app:layout_constraintStart_toStartOf="@+id/tripImage3"
+        app:layout_constraintTop_toBottomOf="@+id/tripImage3" />
+
+    <Button
+        android:id="@+id/openFreindList"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:text="Manage Friends"
+        app:layout_constraintEnd_toEndOf="@+id/editProfile"
+        app:layout_constraintStart_toStartOf="@+id/stats"
+        app:layout_constraintTop_toBottomOf="@+id/stats" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="81dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Edit Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stats" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

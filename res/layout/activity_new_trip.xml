@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.NewTrip">
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/ListOfLocations"
+        app:layout_constraintStart_toStartOf="@+id/ListOfLocations"
+        app:layout_constraintTop_toBottomOf="@+id/ListOfLocations" />
+
+    <EditText
+        android:id="@+id/TripName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toStartOf="@+id/addPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PersonToAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Person"
+        app:layout_constraintEnd_toStartOf="@+id/AddPerson"
+        app:layout_constraintStart_toStartOf="@+id/TripDiscription"
+        app:layout_constraintTop_toBottomOf="@+id/TripDiscription" />
+
+    <EditText
+        android:id="@+id/DateToAdd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="date of Location"
+        app:layout_constraintEnd_toEndOf="@+id/PersonToAdd"
+        app:layout_constraintStart_toStartOf="@+id/LocationToAdd"
+        app:layout_constraintTop_toBottomOf="@+id/LocationToAdd" />
+
+    <EditText
+        android:id="@+id/LocationToAdd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Location"
+        app:layout_constraintEnd_toEndOf="@+id/ListOfPeople"
+        app:layout_constraintStart_toStartOf="@+id/ListOfPeople"
+        app:layout_constraintTop_toBottomOf="@+id/ListOfPeople" />
+
+    <EditText
+        android:id="@+id/TripDiscription"
+        android:layout_width="375dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Discription"
+        app:layout_constraintEnd_toEndOf="@+id/addPhoto"
+        app:layout_constraintStart_toStartOf="@+id/TripName"
+        app:layout_constraintTop_toBottomOf="@+id/TripName" />
+
+    <TextView
+        android:id="@+id/ListOfPeople"
+        android:layout_width="0dp"
+        android:scrollHorizontally="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="All The People Going On your trip"
+        app:layout_constraintEnd_toEndOf="@+id/AddPerson"
+        app:layout_constraintStart_toStartOf="@+id/PersonToAdd"
+        app:layout_constraintTop_toBottomOf="@+id/PersonToAdd" />
+
+
+    <TextView
+        android:id="@+id/ListOfLocations"
+        android:layout_width="0dp"
+        android:scrollHorizontally="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="All The People Going On your trip"
+        app:layout_constraintEnd_toEndOf="@+id/AddLocation"
+        app:layout_constraintStart_toStartOf="@+id/DateToAdd"
+        app:layout_constraintTop_toBottomOf="@+id/DateToAdd" />
+
+
+    <Button
+        android:id="@+id/addPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AddPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/PersonToAdd"
+        app:layout_constraintEnd_toEndOf="@+id/addPhoto"
+        app:layout_constraintStart_toStartOf="@+id/addPhoto"
+        app:layout_constraintTop_toTopOf="@+id/PersonToAdd" />
+
+    <Button
+        android:id="@+id/AddLocation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Add Location"
+        app:layout_constraintBottom_toBottomOf="@+id/DateToAdd"
+        app:layout_constraintEnd_toEndOf="@+id/AddPerson"
+        app:layout_constraintStart_toStartOf="@+id/AddPerson"
+        app:layout_constraintTop_toTopOf="@+id/DateToAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

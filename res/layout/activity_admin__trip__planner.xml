@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".Admin_Trip_Planner">
+
+    <TextView
+        android:id="@+id/intineraryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:text="My Itinerary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_container" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="128dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="262dp"
+        android:ems="10"
+        android:hint="Set Trip Dates"
+        android:inputType="date"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerView" />
+
+    <ImageView
+        android:id="@+id/tripFriendView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/addFriendButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/addFriendButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:text="+"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/tripFriendView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <ImageView
+        android:id="@+id/bannerView"
+        android:layout_width="412dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"/>
+    <!-- Map -->
+
+    <Button
+        android:id="@+id/setLocationButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="30dp"
+        android:text="Set Trip Location"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/map_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripFriendView" />
+
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerView" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_container">
+
+
+      <!-- Row 1 with single column -->
+      <TableRow
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal">
+
+
+      </TableRow>
+
+      <!-- Row 2 with 3 columns -->
+
+
+      <TableRow
+          android:id="@+id/tableRow1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dateColumn"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="Date"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/timeColumn"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="Time"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/flightNoColumn"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="Flight No"
+            android:textColor="#000000" />
+
+      </TableRow>
+
+      <!-- Row 3 with 3 columns -->
+
+
+      <TableRow
+          android:id="@+id/tableRow2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+
+            android:id="@+id/flightNoTextView"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="#000000" />
+
+      </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="287dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/map_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setLocationButton" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
+
